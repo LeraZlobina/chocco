@@ -1,0 +1,10 @@
+.phone {
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+}
+.phone__icon-pic {
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+}

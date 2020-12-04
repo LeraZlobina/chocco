@@ -1,0 +1,20 @@
+.phone {
+    font-size: 1.222222rem;
+    display: flex;
+    align-items: center;
+
+    &__icon {
+        flex-shrink: 0;
+    }
+
+    &__icon-pic{
+        width: 0.666667rem;
+        height: 0.666667rem;
+        margin-right: 0.333333rem;
+        filter: invert(1);
+    }
+
+    &__text {
+        white-space: nowrap;
+    }
+}

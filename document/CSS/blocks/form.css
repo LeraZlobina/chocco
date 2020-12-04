@@ -1,0 +1,61 @@
+.form {
+  display: flex;
+}
+.form-section {
+  background: url(../../../img/blueberry.png) left 5% bottom 11% no-repeat, url(../../../img/leaf-eight.png) right 1% bottom 15% no-repeat, url(../../../img/bg.png);
+}
+.form__column {
+  flex: 1;
+  margin-right: 20px;
+}
+.form__column:last-child {
+  margin-right: 0;
+}
+.form__row {
+  display: flex;
+  margin-bottom: 15px;
+}
+.form__block {
+  flex: 1;
+  margin-right: 20px;
+}
+.form__block:last-child {
+  margin-right: 0;
+}
+.form__input {
+  width: 100%;
+  border: solid 3px transparent;
+  border-radius: 4px;
+  padding: 20px 11px;
+}
+.form__input:focus {
+  border-color: #DEE2BD;
+  outline: none;
+}
+.form__input--textarea {
+  height: 180px;
+  resize: none;
+}
+.form__controls {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.form__controls:nth-last-child(-n+2) {
+  margin-bottom: 38px;
+}
+.form__btns {
+  display: flex;
+  justify-content: flex-start;
+}
+.form__btn {
+  font-size: 16px;
+  padding: 18px 32px;
+  margin-right: 28px;
+}
+.form__btn:last-child {
+  margin-right: 0;
+}
+.form__btn.btn--color--transparent {
+  padding: 0;
+}

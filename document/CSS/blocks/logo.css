@@ -1,0 +1,12 @@
+.logo {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  max-width: 52px;
+  font-size: 27px;
+  line-height: 0.8;
+}
+.logo__name {
+  flex: 1;
+  display: flex;
+}

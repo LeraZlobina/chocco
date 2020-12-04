@@ -1,0 +1,9 @@
+.bullets {
+  display: flex;
+}
+.bullets__item {
+  margin-right: 46px;
+}
+.bullets__item:last-child {
+  margin-right: 0;
+}

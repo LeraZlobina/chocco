@@ -1,0 +1,78 @@
+.reviews {
+  display: flex;
+  flex-direction: column;
+}
+.reviews-section {
+  position: relative;
+  background: url(../../../img/Strawberry.png) right top 8% no-repeat;
+}
+.reviews-section::before {
+  position: absolute;
+  content: url(../../../img/pattern-two.png);
+  left: 0;
+  bottom: -163px;
+}
+.reviews-section::after {
+  position: absolute;
+  content: url(../../../img/berries-two.png);
+  left: 0;
+  bottom: -91px;
+}
+.reviews__title {
+  margin-bottom: 26px;
+}
+.reviews__content {
+  background: #f8faf9 url(../../../img/pattern-five.png) right top no-repeat;
+  padding: 49px 45px 37px;
+  margin-bottom: 21px;
+  overflow: hidden;
+  position: relative;
+}
+.reviews__content-inner {
+  display: flex;
+}
+.reviews__content::before {
+  content: "";
+  display: block;
+  width: 90px;
+  height: 90px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -65px;
+}
+.reviews__photo {
+  width: 254px;
+  height: 258px;
+}
+.reviews__photo-pic {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.reviews__desc {
+  flex: 1;
+  margin-left: 18px;
+  padding-top: 9px;
+}
+.reviews__desc-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 17px;
+  color: black;
+}
+.reviews__desc-text {
+  margin-bottom: 21px;
+  max-width: 444px;
+  line-height: 1.3;
+}
+.reviews__desc-username {
+  font-weight: bold;
+  color: black;
+}
+.reviews__user {
+  display: inline-flex;
+  justify-content: center;
+}

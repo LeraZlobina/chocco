@@ -1,0 +1,28 @@
+.menu {
+    margin: 0 1.666667rem;
+    padding-top: 0.277778rem;
+
+    &__list {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__item {
+    margin-bottom: 0.555556rem;
+    margin-right: 1.333333rem;
+    }
+
+    &__item:last-child {
+        margin-right: 0;
+    }   
+
+    &__link {
+        white-space: nowrap;
+    }
+
+    @include tablets {
+        display: none;
+    }
+}
