@@ -13,6 +13,10 @@
             left: 0;
             bottom: -9.055556rem;
 
+            @include phones {
+                content: url(../../img/pattern-six.png) ;
+                bottom: -5.888889rem;
+            }
         }
 
         &::after{
@@ -21,8 +25,23 @@
             left: 0;
             bottom: -5.055556rem;
 
+            @include phones {
+                content: url(../../img/berries-three.png) ;
+                bottom: -3.833333rem;
+
+            }
         }
+
+        @include phones {
+            background-image: url(../../img/strawberry-two.png) ;
+            background-position: right top;
+        }
+
+
+
+        
     }
+
 
     &__title{
         margin-bottom: 1.444444rem;

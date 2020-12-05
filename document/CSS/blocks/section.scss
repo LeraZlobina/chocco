@@ -17,6 +17,11 @@
         @include tablets {
             margin-bottom: 1.388889rem;
         }
+
+        @include phones {
+            margin-bottom: 1rem;
+
+        }
     }
 
     &__title--color-green {

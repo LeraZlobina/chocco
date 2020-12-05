@@ -1,0 +1,14 @@
+.socials__item {
+  margin-right: 0.833333rem;
+}
+.socials__item:last-child {
+  margin-right: 0;
+}
+.socials__link {
+  width: 1.111111rem;
+  height: 1.111111rem;
+}
+.socials__icon {
+  width: 1.111111rem;
+  height: 1.111111rem;
+}

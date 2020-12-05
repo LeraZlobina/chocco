@@ -7,7 +7,6 @@
     }
 
     @include phones {
-        flex-direction: column;
         padding: 0;
     }
 
@@ -47,9 +46,12 @@
         margin-bottom: 0.833333rem;
 
         @include tablets {
-            margin-bottom: 0.611111rem;
+            margin-bottom: 0.611111rem;            
+        }
 
-            
+        @include phones {
+            margin-bottom: 0.722222rem;
+
         }
     }
 
@@ -64,6 +66,11 @@
 
     &__title {
         margin-bottom: 0.166667rem;
+
+        @include phones {
+            margin-bottom: 0.388889rem;
+
+        }
     }
 
     &__input {
@@ -75,6 +82,8 @@
         @include tablets {
             padding: 0.333333rem 0.611111rem;
         }
+
+        
 
         &:focus {
         border-color: #DEE2BD;
@@ -88,24 +97,29 @@
             @include tablets {
                 height: 4.666667rem;
             }
+
+            @include phones {
+                height: 4.888889rem;
+    
+            }
         }
-    }
+    } 
 
     &__controls {
         display: flex;
         flex-wrap: wrap;
-        margin-bottom: 0.555556rem;
-
-        @include tablets {
-            margin-bottom: 0.833333rem;
+        
+        &:nth-last-child(-n+2) {
+            margin-bottom: 2.166667rem;
         }
 
-        &:nth-last-child(-n+2) {
-            margin-bottom: 2.111111rem;
+        &:not(:nth-last-child(-n+2)) {
+            margin-bottom: 0.5rem;
 
-            @include tablets {
-                margin-bottom: 1.944444rem;
+            @include phones {
+                margin-bottom: 0;
             }
+
         }
 
         @include phones {

@@ -1,12 +1,21 @@
 .radio {
     display: flex;
+    align-items: center;
     cursor: pointer;
     user-select: none;
     margin-right: 1.111111rem;
+    
+
 
     @include tablets {
         margin-right: 1.5rem;
+        
     }
+
+    @include phones {
+        margin-bottom: 0.555556rem;
+    }
+
 
     &:last-child {
         margin-right: 0;

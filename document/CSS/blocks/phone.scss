@@ -8,10 +8,14 @@
     }
 
     &__icon-pic{
-        width: 0.666667rem;
-        height: 0.666667rem;
+        fill: white;
+        width: 0.777778rem;
+        height: 0.833333rem;
         margin-right: 0.333333rem;
-        filter: invert(1);
+        
+        &--green {
+            fill: #497870;
+        }
     }
 
     &__text {
