@@ -10,8 +10,8 @@
     }
 
     &__item {
-    margin-bottom: 0.555556rem;
-    margin-right: 1.333333rem;
+        margin-bottom: 0.555556rem;
+        margin-right: 1.333333rem;
     }
 
     &__item:last-child {
@@ -23,6 +23,32 @@
     }
 
     @include tablets {
+        display: none;  
+
+    }
+
+    &--vertical {
         display: none;
+        font-size: 2rem;
+        color: white;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+
+        @include tablets {
+            display: flex;  
+    
+        }
+
+    }
+    
+    &--vertical > .menu__list {
+        flex-direction: column;
+    }
+    
+    &--vertical > .menu__list > .menu__item{
+        margin-right: 0;
+        margin-bottom: 1.166667rem;
+
     }
 }

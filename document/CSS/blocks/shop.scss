@@ -1,0 +1,48 @@
+.shop {
+    &-section {
+        background: #F8FAF9;
+    }
+
+
+    &-container {
+        display: flex;
+    }
+
+
+    &__arrow{
+
+        display: flex;
+        align-items: center;
+    
+        &-pic {
+        width: 0.722222rem;
+        height: 1.5rem;
+
+        &--rotate{
+            transform: rotate(180deg);
+        }
+        }
+    }
+
+    &__content {
+        display: flex;
+
+        @include tablets {
+            flex-direction: column;
+        }
+    }
+
+    &__photo {
+        flex: 1;
+        display: flex;
+
+        @include tablets {
+            justify-content: center;
+        }
+    }
+
+}
+
+
+
+
