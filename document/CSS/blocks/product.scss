@@ -2,12 +2,11 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-
     
     @include tablets {
         text-align: center;
     }
-
+    
 
     &__header {
         margin-bottom: 1.611111rem;
@@ -71,6 +70,8 @@
                 justify-content: center;
                 align-items: center;
                 background: rgba(255, 255, 255, 0.8);
+                box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+                backdrop-filter: blur(40px);
                 padding: 0 1.388889rem;
                 color: #000000;
                 border-radius: 0.222222rem;
@@ -155,3 +156,4 @@
         font-weight: bold;
     }
 }
+
