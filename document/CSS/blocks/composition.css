@@ -1,0 +1,25 @@
+.composition {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.composition__item {
+  display: flex;
+  align-items: center;
+}
+.composition__item-pic {
+  width: 2.333333rem;
+  height: 2.166667rem;
+  fill: #000000;
+  margin-right: 0.888889rem;
+}
+.composition__item-title {
+  font-weight: 500;
+}
+.composition__col-right {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
