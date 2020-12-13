@@ -1081,6 +1081,13 @@ template {
     bottom: -5.888889rem;
   }
 }
+@media screen and (max-width: 320px) {
+  .reviews-section::before {
+    transform: scale(0.8);
+    left: -0.833333rem;
+    bottom: -9.055556rem;
+  }
+}
 .reviews-section::after {
   position: absolute;
   content: url(../../img/berries-two.png);
@@ -1093,10 +1100,22 @@ template {
     bottom: -3.833333rem;
   }
 }
+@media screen and (max-width: 320px) {
+  .reviews-section::after {
+    transform: scale(0.7);
+    left: -0.833333rem;
+    bottom: -5.666667rem;
+  }
+}
 @media screen and (max-width: 480px) {
   .reviews-section {
     background-image: url(../../img/strawberry-two.png);
     background-position: right top;
+  }
+}
+@media screen and (max-width: 320px) {
+  .reviews-section {
+    background-size: 4.333333rem 2.666667rem;
   }
 }
 .reviews__title {

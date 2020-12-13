@@ -17,6 +17,13 @@
                 content: url(../../img/pattern-six.png) ;
                 bottom: -5.888889rem;
             }
+
+            @include iphone-5 {
+                transform: scale(0.8);
+                left: -0.833333rem;
+                bottom: -9.055556rem;
+
+            }
         }
 
         &::after{
@@ -30,11 +37,24 @@
                 bottom: -3.833333rem;
 
             }
+
+            @include iphone-5 {
+                transform: scale(0.7);
+                left: -0.833333rem;
+                bottom: -5.666667rem;
+
+            }
+
+
         }
 
         @include phones {
             background-image: url(../../img/strawberry-two.png) ;
             background-position: right top;
+        }
+
+        @include iphone-5 {
+            background-size: 4.333333rem 2.666667rem;
         }
 
 
