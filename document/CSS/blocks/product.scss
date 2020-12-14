@@ -5,6 +5,7 @@
     
     @include tablets {
         text-align: center;
+        margin-top: -2.764705rem;
     }
     
 
@@ -54,6 +55,11 @@
         font-weight: bold;
         line-height: 1.2;
         margin-bottom: 0.722222rem;
+
+        @include tablets {
+            font-size: 1.764705rem;
+            margin-bottom: 0.764705rem;
+        }
     }
 
     &-content {
@@ -70,11 +76,20 @@
         margin-bottom: 2.111111rem;
         line-height: 1.2;
 
+        @include tablets {
+            line-height: 1.3;
+            margin-bottom: 0.882352rem;
+        }
+
     }
 
     &__desc {
         display: flex;
         margin-bottom: 1.444444rem;
+
+        @include tablets {
+            margin-bottom: 1.941176rem;
+        }
 
         &-item {
             display: flex;
