@@ -1085,6 +1085,96 @@ template {
   }
 }
 
+.team {
+  display: flex;
+}
+.team__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+  text-align: center;
+  position: relative;
+}
+.team__item:last-child {
+  margin-right: 0;
+}
+.team__person {
+  margin-bottom: 19px;
+  /*&-pic {
+      flex: 1;
+  }*/
+}
+.team__link {
+  margin-bottom: 4px;
+  display: inline-flex;
+  justify-content: center;
+}
+.team__link-title {
+  font-size: 21px;
+  font-weight: 700;
+  color: #292929;
+  margin-right: 4px;
+}
+.team__link-triangle {
+  width: 9px;
+  height: 9px;
+  fill: #365A49;
+  align-self: center;
+}
+.team__desc-position {
+  color: #292929;
+}
+.team__desc-text {
+  font-weight: 300;
+}
+.team__desc-wrapper {
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 100%;
+  transition: height 0.3s;
+}
+
+.active .team__link-triangle {
+  transform: rotate(180deg);
+}
+
+.team--version--tablets {
+  display: none;
+  flex-direction: column;
+  /*.team__desc-wrapper {
+      width: 30%;
+  }*/
+}
+@media screen and (max-width: 768px) {
+  .team--version--tablets {
+    display: flex;
+  }
+}
+.team--version--tablets .team__item {
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+.team--version--tablets .team__item:last-child {
+  margin-bottom: 0;
+}
+.team--version--tablets .team__desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 220px;
+}
+
+.team--version--desktop {
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .team--version--desktop {
+    display: none;
+  }
+}
+
 .reviews {
   display: flex;
   flex-direction: column;
