@@ -8,6 +8,12 @@
     font-size: 0.888889rem;
     font-weight: 800;
     border: none;
+    cursor: pointer;
+
+    &:focus {
+        border-color: #DEE2BD;
+        outline: none;
+    }
 
     @include tablets {
         font-size: 1.055556rem;

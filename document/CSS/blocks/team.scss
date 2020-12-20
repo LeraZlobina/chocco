@@ -1,12 +1,13 @@
 .team {
     display: flex;
+
+    
     
     &__item {
         display: flex;
         flex-direction: column;
         align-items: center;
-        //flex: 1;
-        margin-right: 20px;
+        margin-right: 1.111111rem;
         text-align: center;
         position: relative;
 
@@ -18,34 +19,29 @@
     
     
     &__person{
-        //display: flex;
-        margin-bottom: 19px;
-
-        /*&-pic {
-            flex: 1;
-        }*/
+        margin-bottom: 1.055556rem;
     }
 
     
 
     &__link {
         
-        margin-bottom: 4px;
+        margin-bottom: .222222rem;
         
         display: inline-flex;
         justify-content: center;
         
 
         &-title {
-            font-size: 21px;
+            font-size: 1.166667rem;
             font-weight: 700;
             color: #292929;
-            margin-right: 4px;
+            margin-right: .222222rem;
         }
 
         &-triangle {
-            width: 9px;
-            height: 9px;
+            width: .5rem;
+            height: .5rem;
             fill: #365A49;
             align-self: center;
         }
@@ -61,17 +57,7 @@
  
         &-text {
         font-weight: 300;
-        
         }
-
-        &-wrapper {
-            height: 0;
-            overflow: hidden;
-            position: absolute;
-            top: 100%;
-            transition: height .3s;
-        }
-        
     }
 
     
@@ -92,7 +78,7 @@
 
     .team__item {
         margin-right: 0;
-        margin-bottom: 20px;
+        margin-bottom: 1.176470rem;
 
         &:last-child {
             margin-bottom: 0;
@@ -101,9 +87,14 @@
 
     
 
-    /*.team__desc-wrapper {
-        width: 30%;
-    }*/
+    .team__desc-wrapper {
+        
+        height: 0;
+        overflow: hidden;
+        transition: height .3s;
+
+    
+    }
 
     .team__desc {
         display: flex;
@@ -116,10 +107,20 @@
 .team--version--desktop {
     display: flex;
 
+    .team__desc-wrapper {
+        
+        height: 0;
+        overflow: hidden;
+        transition: height .3s;
+        position: absolute;
+        top: 100%;
+    }
+
     @include tablets {
         display: none;
     }
 }
+
 
 
 

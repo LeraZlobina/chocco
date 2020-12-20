@@ -6,6 +6,12 @@
     overflow: hidden;
     position: relative;
 
+
+    &:hover {
+        border-color: #0f5a47;
+
+    }
+
     @include tablets {
         width: 4.055556rem;
         height: 4.055556rem;

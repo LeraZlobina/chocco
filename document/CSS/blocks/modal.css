@@ -1,0 +1,14 @@
+.modal {
+  background: #313131;
+  display: flex;
+  align-items: center;
+}
+.modal__container {
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+  align-items: center;
+}
+.modal__content {
+  color: #000000;
+}

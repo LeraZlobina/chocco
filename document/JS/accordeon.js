@@ -29,7 +29,6 @@ $('.team__link').on('click', e =>{
     const $this = $(e.currentTarget);
     const container = $this.closest('.team');
     const elemBlock = $this.closest('.team__item');
-    const elemTriangle = $this.find('.team__link-triangle');
 
     if(elemBlock.hasClass('active')){
         closeAllItem(container);
@@ -39,6 +38,7 @@ $('.team__link').on('click', e =>{
     }   
     
 })
+
 
 
 
