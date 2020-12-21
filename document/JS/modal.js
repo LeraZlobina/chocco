@@ -1,7 +1,7 @@
 const validateFields = (form, fieldsArray) => {
     fieldsArray.forEach(field => {
         field.removeClass("input-error");
-        
+
         if(field.val().trim() == ""){
             field.addClass("input-error");
         }
@@ -14,6 +14,8 @@ const validateFields = (form, fieldsArray) => {
 
 $('.form').submit(e => {
     e.preventDefault();
+
+    $('body').addClass("scroll-none");
 
     const form = $(e.currentTarget);
     const name = form.find("[name='name']");
@@ -55,6 +57,8 @@ $('.form').submit(e => {
 $('.js-close-btn').on('click' , e =>{
     e.preventDefault();
     
-    $('.modal').css('display' , 'none')
+    $('.modal').css('display' , 'none');
+    $('body').removeClass("scroll-none");
+
 
 })

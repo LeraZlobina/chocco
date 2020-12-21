@@ -6,6 +6,7 @@ hamburger.addEventListener('click', function(e)
     {
         e.preventDefault();
         fullscreen.style.display = 'flex';
+        document.body.classList.add("scroll-none");
     }
 );
 
@@ -13,5 +14,7 @@ close.addEventListener('click', function(e)
     {
         e.preventDefault();
         fullscreen.style.display = 'none';
+        document.body.classList.remove("scroll-none");
+
     }
 )
