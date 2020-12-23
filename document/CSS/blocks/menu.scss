@@ -20,6 +20,12 @@
 
     &__link {
         white-space: nowrap;
+
+        &:hover {
+            text-decoration: underline;
+            transition: .3s;
+
+        }
     }
 
     @include tablets {

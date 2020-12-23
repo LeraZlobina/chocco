@@ -1,0 +1,91 @@
+.player {
+    position: relative;
+
+
+    &-section {
+        background: #F8FAF9;
+
+        &__container {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        width: 660px;
+        height: 392px;
+    }
+
+
+    &__splash {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url(../../img/player.png) center center/cover no-repeat;
+        cursor: pointer;
+    }
+
+    &__controls {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0 25px;
+        height: 35px;
+        background: #404040;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /*&.active .player__splash {
+        display: none;
+    }*/
+
+    &.paused {
+        .player__start {
+            width: 14px;
+            height: 17px;
+            position: relative;
+
+            &::before,
+            &::after {
+                content: '';
+                position: absolute;
+                width: 5px;
+                top: 0;
+                bottom: 0;
+                background: #626262;
+                
+            }
+
+            &::before{
+                margin-right: 5px;
+                left: 0;
+            }
+
+            &::after{
+                right: 0;
+            }
+
+        }
+    }
+
+    &__start {
+        border: transparent;
+        background: transparent;
+        cursor: pointer;
+
+        &::before{
+            content: url(../../img/playy.png);
+            width: 12px;
+            height: 17px;
+            display: flex;
+        }
+    }
+
+    
+}
