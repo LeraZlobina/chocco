@@ -1,6 +1,7 @@
 var hamburger = document.querySelector('.hamburger');
 var fullscreen = document.querySelector('.fullscreen-menu');
 var close = document.querySelector('.close__icon');
+var links = document.querySelectorAll('.menu__link');
 
 hamburger.addEventListener('click', function(e)
     {
@@ -17,4 +18,11 @@ close.addEventListener('click', function(e)
         document.body.classList.remove("scroll-none");
 
     }
-)
+);
+
+for (var link of links) {
+    link.addEventListener('click', function(){
+        fullscreen.style.display = 'none';
+        document.body.classList.remove("scroll-none");
+    });
+}
